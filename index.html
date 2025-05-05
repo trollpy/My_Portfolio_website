@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo">Portfolio</a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a href="about.html" class="nav-link">About <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#education">Education</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="interests.html" class="nav-link">Interests</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                <li class="nav-item">
+                    <button id="theme-toggle" class="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title animate-slide-in-left">Hi, I'm <span>Your Name</span></h1>
+            <p class="hero-subtitle animate-slide-in-right">Web Developer & Designer</p>
+            <div class="hero-buttons animate-fade-in">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="contact.html" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-image animate-slide-in-bottom">
+            <div class="image-container glassmorphism">
+                <img src="assets/profile.jpg" alt="Profile Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Summary -->
+    <section class="about-summary">
+        <div class="section-header">
+            <h2>About Me</h2>
+            <p>A brief introduction</p>
+        </div>
+        <div class="about-content glassmorphism">
+            <p>I'm a passionate developer with expertise in front-end technologies. I love creating beautiful, functional websites with great user experiences.</p>
+            <a href="about.html" class="btn btn-outline">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Skills Preview -->
+    <section class="skills-preview">
+        <div class="section-header">
+            <h2>My Skills</h2>
+            <p>Technologies I work with</p>
+        </div>
+        <div class="skills-container">
+            <div class="skill-card glassmorphism" data-skill="html">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 95%;"></div>
+                </div>
+            </div>
+            <!-- More skill cards... -->
+        </div>
+    </section>
+
+    <!-- GitHub Activity -->
+    <section class="github-activity">
+        <div class="section-header">
+            <h2>My GitHub Activity</h2>
+            <p>Recent contributions</p>
+        </div>
+        <div class="github-container glassmorphism">
+            <div id="github-graph" class="github-graph"></div>
+            <div id="github-stats" class="github-stats"></div>
+        </div>
+    </section>
+
+    <!-- Projects Preview -->
+    <section class="projects-preview" id="projects">
+        <div class="section-header">
+            <h2>Featured Projects</h2>
+            <p>Some of my recent work</p>
+        </div>
+        <div class="projects-grid">
+            <!-- Project cards... -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <!-- Links... -->
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2023 Your Name. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/github.js"></script>
+</body>
+</html>
